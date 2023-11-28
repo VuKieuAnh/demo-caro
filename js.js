@@ -5,6 +5,7 @@ let arr =[
     [".", ".", ".", ".", "."],
     [".", ".", ".", ".", "."],
 ]
+let isX = true;
 function showData() {
     let content = ""
     // lap de ve bang
@@ -24,6 +25,7 @@ showData();
 // tham so: i, j
 // thay doi gia tri tai i, j -> x
 function changeValue(i, j) {
-    arr[i][j] = "x";
+    arr[i][j] = isX?"x":"o";
+    isX=!isX;
     showData();
 }
